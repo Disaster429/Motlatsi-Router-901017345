@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin: 1rem 0;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Header */
+header {
+    background-color: #6200ea;
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+   
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    left: -80;
+}
+
+nav a:hover {
+    color: black;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 6px 6px 15px rgb(from black r g b);
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Messages */
+.message-display {
+    color: #ff0000;
+    margin-bottom: 1rem;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    border-color: #3700b3;
+    border: 5px;
+    
+}
+
+input:focus {
+    border-color: #6200ea;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: separate;
+    border: 0;
+    box-shadow: 6px 6px 15px rgb(from black r g b);
+
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #6200ea;
+    color: white;
+}
+
+tbody tr:nth-child(evn) {
+    background-color:#6200ea;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+}
